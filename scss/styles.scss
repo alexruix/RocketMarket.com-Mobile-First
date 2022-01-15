@@ -15,8 +15,14 @@ body {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 64.5%;
   font-family: 'Lato', sans-serif;
+}
+
+.container{
+  width: 90%;
+  max-width: 900px;
+  min-width: 288px;
 }
 
 .header {
@@ -25,15 +31,11 @@ html {
   }
 
   &-container {
-    width: 90%;
-    max-width: 900px;
-    min-width: 288px;
     height: 220px;
-    margin-top: 10px;
   }
 }
 .logo{
-  margin-top: 60px;
+  margin-top: 50px;
   &__text{
     font-size: 2.4rem;
     font-weight: 700;
@@ -49,8 +51,8 @@ p{
 
 header {
   position: relative;
-  padding: 2%;
-  // margin-bottom: 15%;
+  // padding: 2%;
+  // margin-bottom: 20px;
   min-width: 320px;
   // height: 334px;
   text-align: center;
@@ -85,5 +87,25 @@ header {
   }
   span{
     margin-left: 10px;
+  }
+}
+
+
+.prices{
+  padding-top: 30px;
+  width: 100%;
+  background: $offwhite;
+  text-align: center;
+  &__bg{
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title{
+    width: 90%;
+  }
+  & p{
+    color: #757575;
+    line-height: 1.6rem;
   }
 }
