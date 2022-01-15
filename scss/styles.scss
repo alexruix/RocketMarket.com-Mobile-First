@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap');
+//Colores
+$gradientbg: linear-gradient(207.8deg, #061700 6.2%, #52C234 100%);
+$dolargreen: #46D004;
+$softgreen: #EFFFD4;
+$blue: #1A9AF7;
+$softblue: #E7F5FF;
+$white: #FAFAFA;
+$offwhite: #FAF8F7;
+$grey: #BABABA;
+$warmblack: #232323;
+$black: #181818;
+
+body{
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+}
+.header{
+  position: relative;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: $gradientbg;
+  &__img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+  }
+  &-container{
+    max-width: 900px;
+    min-width: 288px;
+    margin-top: 10px;
+  }
+}
