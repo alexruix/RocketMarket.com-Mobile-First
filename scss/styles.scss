@@ -4,9 +4,9 @@ $dolargreen: #46D004;
 $softgreen: #EFFFD4;
 $blue: #1A9AF7;
 $softblue: #E7F5FF;
-$white: #FAFAFA;
+$white: #fff;
 $offwhite: #FAF8F7;
-$grey: #BABABA;
+$grey: #B5B0AC;
 $warmblack: #232323;
 $black: #181818;
 
@@ -19,7 +19,7 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-.container{
+.container {
   width: 90%;
   max-width: 900px;
   min-width: 288px;
@@ -34,15 +34,18 @@ html {
     height: 220px;
   }
 }
-.logo{
+
+.logo {
   margin-top: 50px;
-  &__text{
+
+  &__text {
     font-size: 2.4rem;
     font-weight: 700;
     color: $softblue;
   }
 }
-p{
+
+p {
   font-family: 'Hind', sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
@@ -57,55 +60,139 @@ header {
   // height: 334px;
   text-align: center;
   background: $gradientbg;
+
   & h1 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: $white;
   }
-  p{
+
+  p {
     margin-top: 2.5rem;
     color: $softblue;
   }
 }
 
-.button{
+.button {
   padding: 15px;
   display: block;
   border-radius: 4px;
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
   font-size: 1.4rem;
   font-family: 'Hind', sans-serif;
   text-transform: capitalize;
   color: inherit;
   font-weight: 500;
-  &-header{
+
+  &-header {
     position: absolute;
     top: 93%;
     background: $offwhite;
-    left:  calc(50% - (219px/2));
+    left: calc(50% - (219px/2));
   }
-  span{
+
+  span {
     margin-left: 10px;
   }
 }
 
-
-.prices{
+.prices {
   padding-top: 30px;
   width: 100%;
-  background: $offwhite;
   text-align: center;
-  &__bg{
+
+  &__bg {
     height: 200px;
     margin-left: auto;
     margin-right: auto;
   }
-  &__title{
+
+  &__title {
     width: 90%;
   }
-  & p{
+
+  & .p {
     color: #757575;
     line-height: 1.6rem;
+  }
+}
+
+.text {
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    margin-bottom: 15px;
+
+    &-dolar {
+      color: $dolargreen;
+    }
+  }
+}
+
+main,
+section {
+  background: $offwhite;
+}
+
+.table {
+  &__dolar {
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Hind', sans-serif;
+  }
+
+  &__container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 350px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__left {
+    &-top {
+      border-top-left-radius: 16px;
+    }
+    &-bottom{
+      border-bottom-left-radius: 16px;
+    }
+  }
+
+  &__right {
+    font-size: 1.4rem;
+    // font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+    &-top {
+      border-top-right-radius: 16px;
+    }
+    &-bottom{
+      border-bottom-right-radius: 16px;
+    }
+  }
+
+  &__date {
+    // background: $softgreen;
+    // border-radius: 16px;
+    // padding: .2% 0;
+  }
+}
+
+table {
+  width: 100%;
+  height: 100%;
+
+  & td {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: $grey;
+    background: $white;
   }
 }
