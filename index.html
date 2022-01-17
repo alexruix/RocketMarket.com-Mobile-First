@@ -106,20 +106,23 @@
         <h2 class="text__h2">Invertir es para todos</h2>
         <!-- <img src="img/desk.svg" alt="" class="imgfit"> -->
     </section>
-    <section id="planes" class="planes">
-        <div class="">
-          <h2></h2>
-          <p></p>
+    <section id="planes" class="planes flex__column">
+        <div class="planes__title">
+          <h2 class="text__h2">Escoge el plan que mejor se ajuste a vos.</h2>
+          <p class="text__subtitle">Cualquier plan te da acceso completo a nuestra plataforma.</p>
         </div>
-        <article class="">
-            <p>Recomendado</p>
-            <div class="">
-                <h3>Pago Anual</h3>
-                <p><span>$</span>27500</p>
-                <p>*Ahorras $1449 comparado al plan mensual.</p>
-                <button class="button button_planes" type="button" name="button">Quiero este <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </article>
+        <section class="planes__container-slider">
+          <article class="planes__card flex__column">
+              <p class="recomendado">Recomendado</p>
+              <div class="flex__column">
+                  <h3 class="text__title">Pago Anual</h3>
+                  <p class="text__price"><sup>$</sup>27500</p>
+                  <p class="p text__description">*Ahorras $1449 comparado al plan mensual.</p>
+                  <button class="button button__planes" type="button" name="button">Quiero este <span><i class="fa-solid fa-arrow-right"></i></span></button>
+              </div>
+          </article>
+        </section>
+
     </section>
   </main>
 

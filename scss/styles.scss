@@ -6,7 +6,7 @@ $blue: #1A9AF7;
 $softblue: #E7F5FF;
 $white: #fff;
 $offwhite: #FAF8F7;
-$grey: #B5B0AC;
+$grey: #757575;
 $warmblack: #232323;
 $black: #181818;
 
@@ -94,6 +94,17 @@ header {
     background: $offwhite;
     left: calc(50% - (219px/2));
   }
+  &__planes{
+    background: $offwhite;
+    border: 2px solid $dolargreen;
+    font-weight: bold;
+    width: 70%;
+    text-transform: none;
+    font-size: 1.6rem;
+    & span{
+      color: $dolargreen;
+    }
+  }
 
   span {
     margin-left: 10px;
@@ -147,6 +158,11 @@ header {
   }
   &__description{
   color: $grey;
+  font-weight: 500;
+  }
+  &__price{
+    font-size: 4.2rem;
+    font-weight: 700;
   }
 }
 
@@ -250,12 +266,53 @@ table {
   width: 100%;
   min-height: 320px;
   background-size: cover;
-  color: $white;
+  color: $black;
   padding-top: 30px;
-  // background-position:  left center;
-  background-image: url("../img/final-mob.svg");
+  background-position:  center;
+  background-image: url("../img/investing.jpeg");
   background-repeat: no-repeat;
   & h2{
     margin-top: 0;
+  }
+}
+
+.planes{
+  padding: 3%;
+
+    &__title{
+      padding-top: 50px;
+      margin-bottom: 20px;
+    }
+    &__card{
+      background:$white;
+      padding: 18px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      min-width: 310px;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+      width: 90%;
+      position: relative;
+
+      & sup{
+        font-size: 1.6rem;
+        top: -2rem;
+        padding: 2px;
+      }
+      & .p{
+        width: 70%;
+        margin-bottom: 20px;
+      }
+    }
+  & .recomendado{
+    position: absolute;
+    background: $dolargreen;
+    color: $white;
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    top:0;
+    transform: translateY(-65%);
   }
 }
