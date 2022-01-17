@@ -3,6 +3,7 @@ $gradientbg: linear-gradient(207.8deg, #4286f4 6.2%, #373B44 100%);
 $dolargreen: #46D004;
 $softgreen: #EFFFD4;
 $blue: #1A9AF7;
+$red:  #f7421a;
 $softblue: #E7F5FF;
 $white: #fff;
 $offwhite: #FAF8F7;
@@ -161,7 +162,9 @@ header {
   font-weight: 500;
   }
   &__price{
+    margin: 0;
     font-size: 4.2rem;
+    line-height: 6.4rem;
     font-weight: 700;
   }
 }
@@ -277,18 +280,21 @@ table {
 }
 
 .planes{
-  padding: 3%;
+  padding: 60px 3%;
 
     &__title{
-      padding-top: 50px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     &__card{
       background:$white;
-      padding: 18px;
+      scroll-snap-align: center;
+      text-align: center;
       padding-top: 50px;
       padding-bottom: 20px;
-      min-width: 310px;
+      min-width: 230px;
+      max-width: 300px;
+      margin: auto;
+      margin-top: 30px;
       text-align: center;
       border-radius: 16px;
       box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -301,18 +307,44 @@ table {
         padding: 2px;
       }
       & .p{
-        width: 70%;
+        width: 80%;
         margin-bottom: 20px;
       }
     }
-  & .recomendado{
+  & .category{
     position: absolute;
-    background: $dolargreen;
-    color: $white;
     padding: 14px;
+    color: $white;
+    left: calc(50% - (120px/2));
     font-weight: bold;
     border-radius: 8px;
     top:0;
+    min-width: 120px;
     transform: translateY(-65%);
+    &__recomendado{
+      background: $dolargreen;
+    }
+    &__exclusivo{
+      background-color: $blue;
+    }
+    &__basico{
+      background-color: $red;
+    }
+  }
+  &__slider{
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+ overscroll-behavior: contain;
+     scroll-snap-type: x proximity;
+     &::-webkit-scrollbar {
+       background-color: $softgreen;
+       height: 4px;
+       border-radius: 16px;
+     }
+     &::-webkit-scrollbar-thumb {
+       background-color: $dolargreen;
+       border-radius: 16px;
+     }
   }
 }
