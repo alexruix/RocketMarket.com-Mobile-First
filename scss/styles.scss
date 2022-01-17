@@ -114,7 +114,7 @@ header {
 
 .prices {
   padding-top: 30px;
-  width: 100%;
+  // width: 100%;
   text-align: center;
 
   &__bg {
@@ -202,7 +202,6 @@ section {
     width: 90%;
     min-width: 230px;
     max-width: 350px;
-    height: 250px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -240,8 +239,9 @@ section {
 }
 
 table {
-  width: 100%;
-  height: 100%;
+  min-width: 230px;
+  max-width: 300px;
+  min-height: 350px;
 
   & td {
     font-size: 1.6rem;
@@ -315,7 +315,8 @@ table {
     padding-bottom: 20px;
     min-width: 230px;
     max-width: 300px;
-    margin: 30px auto auto;
+    min-height: 350px;
+    margin: 30px auto;
     text-align: center;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
