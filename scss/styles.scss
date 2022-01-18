@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap'); //Colores
-$gradientbg: linear-gradient(200deg, #0f9b0f 6.2%, #206000 100%);
+$gradientbg: linear-gradient(to left bottom, #232323, #2d2f39, #333c52, #304b6b, #1f5b85);
 $dolargreen: #206000;
 $softgreen: #EFFFD4;
 $blue: #1F5B85;
+$gold: #E5BE18;
 $red: #A32A0F;
 $softblue: #E7F5FF;
 $white: #fff;
@@ -34,7 +35,7 @@ html {
   }
 
   &-container {
-    height: 220px;
+    padding-bottom: 8%;
   }
 }
 
@@ -80,32 +81,38 @@ header {
 .button {
   padding: 15px;
   display: block;
-  border-radius: 4px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: 'Hind', sans-serif;
   text-transform: capitalize;
   color: inherit;
-  font-weight: 500;
+  font-weight: bold;
+
+  & span {
+    color: $dolargreen;
+    font-weight: bold;
+    border: 2px sollid;
+  }
 
   &-header {
     position: absolute;
     top: 93%;
     background: $offwhite;
+     border: 2px solid $dolargreen;
     left: calc(50% - (219px/2));
+    box-shadow: rgba(89, 73, 30, 0.16) 0px 3px 8px;
   }
 
   &__planes {
-    background: $offwhite;
+    // background: $offwhite;
     border: 2px solid $dolargreen;
-    font-weight: bold;
+
     width: 70%;
     text-transform: none;
-    font-size: 1.6rem;
 
-    & span {
-      color: $dolargreen;
-    }
+
+
   }
 
   span {
@@ -312,22 +319,22 @@ table {
   background-size: cover;
   color: $white;
   padding-top: 30px;
-  background-position: center;
+  background-position: left;
   background-image: url("../img/investing.jpeg");
   background-repeat: no-repeat;
   position: relative;
 
   &::after{
     content: " ";
-    background: $softgreen;
+    background: $warmblack;
     height: 320px;
     top: 0;
     width: 100%;
     position: absolute;
-    opacity: .2;
+    opacity: .5;
   }
 
-  & h2 {
+  &__text{
     margin-top: 0;
     left: 0;
     right: 0;
@@ -383,11 +390,12 @@ table {
     transform: translateY(-65%);
 
     &__recomendado {
-      background: $dolargreen;
+      background: $blue;
     }
 
     &__exclusivo {
-      background-color: $blue;
+      background-color: $gold;
+      color: $black;
     }
 
     &__basico {
@@ -403,13 +411,13 @@ table {
     scroll-snap-type: x proximity;
 
     &::-webkit-scrollbar {
-      background-color: $softgreen;
+      background-color: $softblue;
       height: 4px;
       border-radius: 16px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: $dolargreen;
+      background-color: $blue;
       border-radius: 16px;
     }
   }
